@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Times New Roman', sans-serif;
+}
+header {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+}
+header img {
+    margin-left: 30px;
+    margin-right: 20px;
+    width: 100px;
+    height: 100px;
+}
+#s15 {
+    font-size: 15px;
+}
+.line {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+#student-college-details span {
+    text-decoration: underline;
+    font-weight: bold;
+}
+.office-copy {
+    margin-top: 20px;
+    margin-left: 30px;
+}
+#office-copy-header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+p#center {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+#student-college-details {
+    margin-right: 30px;
+    border: 1.5px solid black;
+}
+#student-college-details table {
+    width: 100%;
+}
+#student-address {
+    margin-right: 30px;
+    border-left: 1.5px solid black;
+    border-right: 1.5px solid black;
+    border-bottom: 1.5px solid black;
+}
+#student-address table {
+    width: 100%;
+}
+#leave-info {
+    margin-right: 30px;
+    border-left: 1.5px solid black;
+    border-right: 1.5px solid black;
+    border-bottom: 1.5px solid black;
+    display: flex;
+    flex-direction: row;
+}
+#leave-info table {
+    width: 80%;
+}
+#special-leave {
+    width: 20%;
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply Leave</title>
+    <link rel="stylesheet" href="./navbar.css">
+    <link rel="stylesheet" href="./applyleave.css">
+    <script src="./applyleave.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="./assets/nmims-logo.png" alt="">
+            <div class="column">
+                <p>SVKM'S NMIMS</p>
+                <p>LEAVE MANAGEMENT PORTAL</p>
+            </div>
+        </div>
+        <div class="login-btn">
+            <button>Mentors Login</button>
+        </div>
+    </nav>
+    <main>
+        <div>
+            <h3>Student Leave Form</h3>
+            <p id="red">&#x26A0; Students applying for leave must have minimum 80% attendance in each subject. As per univeristy norms, every student need to maintain 80% attendance in all subjects.</p>
+            <form action="">
+                <table>
+                    <tr>
+                        <td>Name of Student: </td>
+                        <td><input required type="text" placeholder="Enter your name"></td>
+                    </tr>
+                    <tr>
+                        <td>SAP ID: </td>
+                        <td><input required type="number" placeholder="Enter your SAP ID"></td>
+                    </tr>
+                    <tr>
+                        <td>Roll No.: </td>
+                        <td><input required type="text" placeholder="Enter your roll number"></td>
+                    </tr>
+                    <tr>
+                        <td>School: </td>
+                        <td><input required type="text" placeholder="Enter your School name"></td>
+                    </tr>
+                    <tr>
+                        <td>Program: </td>
+                        <td>
+                            <select name="" id="">
+                                <option value="">B.TECH.</option>
+                                <option value="">MBA.TECH.</option>
+                                <option value="">M.TECH.</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Branch: </td>
+                        <td>
+                            <select name="" id="">
+                                <option value="">C.S.</option>
+                                <option value="">IT</option>
+                                <option value="">EXTC</option>
+                                <option value="">Mech</option>
+                                <option value="">Mechtrx</option>
+                                <option value="">Civil</option>
+                                <option value="">Textile</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Semester: </td>
+                        <td>
+                            <select name="" id="">
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4</option>
+                                <option value="">5</option>
+                                <option value="">6</option>
+                                <option value="">7</option>
+                                <option value="">8</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Home Address: </td>
+                        <td><input required type="text" placeholder="Enter your home address"></td>
+                    </tr>
+                    <tr>
+                        <td>Hostel Room No.: </td>
+                        <td><input required type="text" placeholder="Enter your hostel room number"></td>
+                    </tr>
+                    <tr>
+                        <td>Mobile No. (self): </td>
+                        <td><input required type="tel" placeholder="Enter your phone number"></td>
+                    </tr>
+                    <tr>
+                        <td>Mobile No. (parents): </td>
+                        <td><input required type="tel" placeholder="Enter your parent's phone number"></td>
+                    </tr>
+                    <tr>
+                        <td>Email ID (self): </td>
+                        <td><input required type="email" placeholder="Enter your email"></td>
+                    </tr>
+                    <tr>
+                        <td>Email ID (parents): </td>
+                        <td><input required type="email" placeholder="Enter your parent's email"></td>
+                    </tr>
+                    <tr>
+                        <td>Type of Leave: </td>
+                        <td>
+                            <select name="" id="">
+                                <option value="">Authorized Leave</option>
+                                <option value="">Special Leave</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Leave from: </td>
+                        <td><input required type="date" id="dfrom" onchange="fromCheckDate()"></td>
+                    </tr>
+                    <tr>
+                        <td>Leave upto: </td>
+                        <td><input required type="date" id="dto" onchange="toCheckDate()"></td>
+                    </tr>
+                    <tr>
+                        <td>Reason for leave: </td>
+                        <td><input required type="text" placeholder="Give a reason for leave"></td>
+                    </tr>
+                    <tr>
+                        <td>Average Attendance (%): </td>
+                        <td><input required type="number" placeholder="Average attendance"></td>
+                    </tr>
+                </table>
+                <div id="sign">
+                    <label for="photo">Upload Signature:  </label>
+                    <input required type="file" id="photo">
+                </div>
+                <button id="proceed">Proceed</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
